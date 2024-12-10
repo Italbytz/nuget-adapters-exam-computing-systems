@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackOnBuild>true</PackOnBuild>
+        <PackageVersion>9.0.0</PackageVersion>
+        <Authors>Robin Nunkesser</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>introduction.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/Italbytz/nuget-ports-adapters-computing-systems</PackageProjectUrl>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <None Include="introduction.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="Italbytz.Ports.Exam.ComputingSystems" Version="9.0.0" />
+    </ItemGroup>
+</Project>
